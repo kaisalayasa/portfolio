@@ -1,6 +1,9 @@
 import { useLanguage } from '../contexts/LanguageContext'
 import MangaEffects from './MangaEffects'
 import './Projects.css'
+import ShiritoriImg from '../../public/images/shiritori.png';
+import LolImg from '../../public/images/lol.png';
+import MoooveImg from '../../public/images/mooove.png';
 
 const Projects = () => {
   const { language } = useLanguage()
@@ -15,7 +18,7 @@ const Projects = () => {
           description:
             'A web-based Shiritori game built with React that allows players to practice Japanese vocabulary in an interactive way. The game validates words locally and has been used by over 350+ users. Try it for yourself.',
           tech: ['React', 'JavaScript', 'Japanese Language'],
-          image: '../../public/images/shiritori.png',
+          image: ShiritoriImg,
           link: 'https://shiritori-game-five.vercel.app/'
         },
         {
@@ -23,7 +26,7 @@ const Projects = () => {
           description:
             'A fun Python-based guessing game for League of Legends fans. Players are challenged to identify champion abilities as Passive, Q, W, E, or R. Built using Python with data scraped and processed using BeautifulSoup.',
           tech: ['Python', 'BeautifulSoup', 'Game Logic'],
-          image: '../../public/images/lol.png',
+          image: LolImg,
           link: 'https://github.com/kaisalayasa/Do-You-Even-LOL-'
         },
         {
@@ -31,7 +34,7 @@ const Projects = () => {
           description:
             'A subleasing platform currently under development. Features a full React frontend with a Node.js backend and MongoDB database, designed to help users create and browse sublease listings easily.',
           tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-          image: '../../public/images/mooove.png',
+          image: MoooveImg,
           link: 'https://github.com/kaisalayasa/MOOOVE'
         }
       ]
@@ -46,7 +49,7 @@ const Projects = () => {
           description:
             'Reactで構築した日本語学習向けのしりとりゲームです。ローカル辞書を用いて単語を検証し、これまでに350人以上のユーザーに利用されています。ぜひ実際に遊んでみてください。',
           tech: ['React', 'JavaScript', '日本語'],
-          image: '../../public/images/shiritori.png',
+          image: ShiritoriImg,
           link: 'https://shiritori-game-five.vercel.app/'
         },
         {
@@ -54,7 +57,7 @@ const Projects = () => {
           description:
             'League of Legendsファン向けのPython製クイズゲームです。チャンピオンのスキルがパッシブ、Q、W、E、Rのどれかを当てるゲームで、BeautifulSoupを用いてデータを処理しています。',
           tech: ['Python', 'BeautifulSoup', 'ゲームロジック'],
-          image: '../../public/images/lol.png',
+          image: LolImg,
           link: 'https://github.com/kaisalayasa/Do-You-Even-LOL-'
         },
         {
@@ -62,12 +65,12 @@ const Projects = () => {
           description:
             '現在開発中のサブリース向けWebプラットフォームです。Reactによるフロントエンドと、Node.js・MongoDBを用いたバックエンドで構成されています。',
           tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-          image: '../../public/images/mooove.png',
+          image: MoooveImg,
           link: 'https://github.com/kaisalayasa/MOOOVE'
         }
       ]
     }
-  }
+  };
   
 
   const t = content[language]

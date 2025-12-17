@@ -1,6 +1,9 @@
 import { useLanguage } from '../contexts/LanguageContext'
 import MangaEffects from './MangaEffects'
 import './Hobbies.css'
+import AnkiImg from '../../public/images/anki.png';
+import MusicImg from '../../public/images/music.png';
+import SportsImg from '../../public/images/sports.png';
 
 const Hobbies = () => {
   const { language } = useLanguage()
@@ -14,19 +17,19 @@ const Hobbies = () => {
           title: 'Languages',
           description:
             'I speak Arabic, English, and Japanese. I learned Japanese primarily through self-study, using Anki and consistent reading and listening practice. Language learning is both a technical and cultural pursuit for me.',
-          image: '../../public/images/anki.png'
+          image: AnkiImg
         },
         {
           title: 'Music',
           description:
             'I play guitar and oud, and music is an important creative outlet. I especially enjoy Japanese music, with Spitz as my favorite band, using music as a way to engage with culture.',
-          image: '../../public/images/music.png'
+          image: MusicImg
         },
         {
           title: 'Sports',
           description:
             'I stay active through regular sports participation and currently serve as the volleyball convener. I enjoy playing badminton, table tennis, pickleball, soccer, and volleyball.',
-          image: '../../public/images/sports.png'
+          image: SportsImg
         }
       ]
     },
@@ -38,19 +41,19 @@ const Hobbies = () => {
           title: '言語',
           description:
             'アラビア語、英語、日本語の三言語を話します。日本語は主に独学で学び、Ankiを活用しながら読解とリスニングを続けてきました。言語学習は文化的な探求でもあります。',
-          image: '../../public/images/anki.png'
+          image: AnkiImg
         },
         {
           title: '音楽',
           description:
             'ギターとウードを演奏しています。特に日本の音楽が好きで、最も好きなバンドはスピッツです。音楽を通して文化と関わっています。',
-          image: '../../public/images/music.png'
+          image: MusicImg
         },
         {
           title: 'スポーツ',
           description:
             '活動的な生活を心がけ、現在はバレーボールのコンビーナーを務めています。バドミントン、卓球、ピックルボール、サッカー、バレーボールを楽しんでいます。',
-          image: '../../public/images/sports.png'
+          image: SportsImg
         }
       ]
     }
