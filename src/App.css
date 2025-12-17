@@ -1,0 +1,40 @@
+.app {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  background: var(--color-bg-primary);
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.manga-panel {
+  background: var(--color-panel-bg);
+  border: 3px solid var(--color-border);
+  border-radius: 0;
+  padding: 3rem;
+  margin: 2rem 0;
+  position: relative;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-number {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: var(--color-text-muted);
+  opacity: 0.5;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+}
